@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HRI</title>
+
+  <script src="qaws.js"></script>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      background-image: url(img/intro.png); 
+      // background-image: url(img/background.png);
+      background-size: 1000px;
+      background-repeat: no-repeat;
+      background-position: 0px 30px;
+    }
+
+    h1 {
+      font-weight: strong;
+      font-size: 300%;
+      font-family: "Verdana";
+    }
+
+    h2 {
+      font-weight: normal;
+      font-size: 200%;
+      font-family: "Verdana";
+    }
+
+    p {
+      font-weight: normal;
+      font-size: 120%;
+    }
+
+    input[type=text] {
+      border-radius: 8px;
+      padding: 14px 24px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 24px;
+      margin:10px 10px 10px 10px;
+    }
+
+    input[type=button] {
+      background-color: #A01010; /* Red */
+      border: none;
+      border-radius: 8px;
+      color: white;
+      padding: 14px 24px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 24px;
+      margin:10px 10px 10px 10px;
+    }
+  </style>
+</head>
+
+<body>
+    <!-- status -->
+    <div align='left' id='status'> <font color='red'>NOT CONNECTED</font> </div>
+
+  
+    <div align='center'> <img height=250 id='image_default' src="img/none.png" alt=""/> </div>
+
+    <br>
+
+    <h2>
+        <div align='center' id='text_default'> &nbsp; </div>
+    </h2>
+
+    <br>
+
+    <div align='center' id='buttons'>
+        <input type="text" id="pin_input" name="pin" maxlength="4" size="4"><br>
+        <br>
+        <input type="button" id="run" value="Ok" onclick="pin()"> </td>
+    </div>
+
+
+  <!-- ****** SCRIPTS ****** -->
+  <script>
+
+    var ip=window.location.hostname;
+    if (ip=='')
+        ip='127.0.0.1';
+    port = 9100;
+
+    console.log("Trying connection...")
+    wsrobot_init(ip,port);
+
+
+    var codeport = 9010;
+    var codeurl = "ws://"+ip+":"+codeport+"/websocketserver";
+    console.log(codeurl);
+    codews = new WebSocket(codeurl);
+
+    var ctrlport = 9110;
+    var ctrlurl = "ws://"+ip+":"+ctrlport+"/ctrlwebsocketserver";
+    console.log(ctrlurl);
+    ctrlws = new WebSocket(ctrlurl);
+
+   
+    function pin() {
+        
+        var pin = document.getElementById('pin_input').value;
+
+        var action = null;
+        if(pin=='1111') //deafness
+        {
+            action = 'dir_deafness';
+        }
+        else if(pin=='2222') //blindness
+        {
+            action = 'dir_blindness';
+        }
+        else if(pin=='3333') //senior
+        {
+            action = 'dir_senior';
+        }
+        else if(pin=='4444') //non-disabled, nor senior
+        {
+            action = 'dir';
+        }
+        else 
+        {
+            codews.send(
+                "im.display.loadUrl('slide.html')\n" +
+                "im.execute('access_denied')\n" +
+                "time.sleep(5)\n" +
+                "im.display.loadUrl('index.html')\n");
+        }
+
+        if(action!=null)
+        {
+            console.log(action);
+            codews.send(
+                "im.display.loadUrl('slide.html')\n" +
+                "im.execute(" + '"' + action + '"' + ")\n" +
+                "time.sleep(7)\n" +
+                "im.display.loadUrl('slide.html')\n" +
+                "im.execute('goodbye')\n" +
+                "time.sleep(2)\n" +
+                "im.display.loadUrl('index.html')\n");
+        }
+    }
+
+  </script>
+</body>
+</html>
+

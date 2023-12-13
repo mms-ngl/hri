@@ -1,0 +1,8 @@
+IMAGE
+<*,*,*,*>: img/speaker.jpg
+----
+TTS
+<*,*,it,*>: Per favore, gira a sinistra e cammina per 100 metri, poi gira a destra e cammina per 20 metri e poi gira a destra e cammina per 50 metri
+<*,*,*,*>:  Please, turn left and walk 100 meters, then turn to right and walk 20 meters and then turn to right and walk 50 meters
+----
+

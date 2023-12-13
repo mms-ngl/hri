@@ -1,0 +1,15 @@
+IMAGE
+<*,*,*,*>: img/access_denied.jpg
+----
+TEXT_title
+<*,*,it,*>: Accesso negato
+<*,*,*,*>:  Access denied
+----
+TEXT
+<*,*,it,*>: IL PIN FORNITO NON È CORRETTO
+<*,*,*,*>:  PROVIDED PIN IS NOT CORRECT
+----
+TTS
+<*,*,it,*>: TIl pin fornito non è corretto
+<*,*,*,*>:  Provided pin is not correct
+----
