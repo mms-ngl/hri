@@ -1,7 +1,7 @@
 ## Human-[Pepper](https://www.aldebaran.com/en/pepper/) Interaction with [MODIM](https://bitbucket.org/mtlazaro/modim/src/master/) interface
 
 <div align="center">
-  <video src="https://github.com/mms-ngl/hri/assets/150866036/cc626e42-15a6-4458-b2f9-eecb2e89be6f" />
+  <video src="https://github.com/mms-ngl/hri/assets/150866036/5bf26c2b-3a9c-496c-a3c2-9a1a70fdbbbb" />
 </div>
 
 > To effectively assist shopping malls visitors, a social humanoid robot Pepper identifies the individuals it interacts with to offer personalized assistance. Personalized actions for visitor categories are as follows:\
