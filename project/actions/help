@@ -1,0 +1,27 @@
+IMAGE
+<*, *, *, *>:  img/pepper.jpg
+----
+TEXT
+<*,*,it,*>: Ciao! Hai bisogno di aiuto? 
+<*,*,*,*>:  Hello! Do you need any help?
+----
+GESTURE
+<*,*,*,*>: animations/Stand/Gestures/Hey_1
+----
+TTS
+<*,*,it,*>: Ciao! Hai bisogno di aiuto?
+<*,*,*,*>:  Hello! Do you need any help?
+----
+ASR
+<*,*,it,*>: {'yes': ['si', 'ok', 'va bene'], 'no': ['no', 'per niente'] }
+<*,*,*,*>:  {'yes': ['si', 'sure', 'great'], 'no': ['no', 'not at all'] }
+----
+BUTTONS
+yes
+<*,*,it,*>: Si
+<*,*,*,*>:  Yes
+no
+<*,*,it,*>: No
+<*,*,*,*>:  No
+----
+

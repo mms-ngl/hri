@@ -1,0 +1,15 @@
+IMAGE
+<*,*,*,*>: img/map.jpg
+----
+TEXT_title
+<*,*,it,*>: DIREZIONE
+<*,*,*,*>:  DIRECTION
+----
+TEXT
+<*,*,it,*>: TRASFORMA A SINISTRA E PASSEGGIATA 100 METRI | TRASFORMA A SINISTRA E PASSEGGIATA 20 METRI | GIRARE A DESTRA E PASSEGGIARE 20 METRI
+<*,*,*,*>:  TURN TO LEFT AND WALK 100 METERS | TURN TO LEFT AND WALK 20 METERS | TURN TO RIGHT AND WALK 20 METERS
+----
+TTS
+<*,*,it,*>: Per favore, gira a sinistra e cammina per 100 metri, poi gira a destra e cammina per 20 metri e poi gira a destra e cammina per 50 metr.
+<*,*,*,*>:  Please, turn left and walk 100 meters, then turn to right and walk 20 meters and then turn to right and walk 50 meters.
+----

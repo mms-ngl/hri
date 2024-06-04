@@ -1,0 +1,16 @@
+IMAGE
+<*, *, *, *>:  img/pepper.jpg
+----
+TEXT_title
+<*,*,it,*>: Arrivederci
+<*,*,*,*>:  Goodbye
+----
+TEXT
+<*,*,it,*>: Spero ti sia divertito  
+<*,*,*,*>:  I hope you have enjoyed
+----
+TTS
+<*,*,it,*>: Spero ti sia divertito. Arrivederci.
+<*,*,*,*>:  I hope you have enjoyed. Goodbye.
+----
+

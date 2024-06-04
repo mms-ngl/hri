@@ -1,0 +1,9 @@
+TEXT_title
+<*,*,it,*>: Annuncio pubblicitario
+<*,*,*,*>:  Advertisement
+----
+BUTTONS
+finish
+<*,*,it,*>: Finire
+<*,*,*,*>:  Finish
+----

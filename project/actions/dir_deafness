@@ -1,0 +1,11 @@
+IMAGE
+<*,*,*,*>: img/map.jpg
+----
+TEXT_title
+<*,*,it,*>: Direzione
+<*,*,*,*>:  Direction
+----
+TEXT
+<*,*,it,*>: > 100m  | ^ 20m  | < 50m 
+<*,*,*,*>:  > 100m  | ^ 20m  | < 50m
+----

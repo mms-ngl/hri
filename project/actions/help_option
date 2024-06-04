@@ -1,0 +1,23 @@
+IMAGE
+<*,*,*,*>:  img/pepper.jpg
+----
+TEXT
+<*,*,it,*>: Per favore, scegli un'opzione
+<*,*,*,*>:  Please choose an option 
+----
+TTS
+<*,*,it,*>: Per favore, scegli un'opzione
+<*,*,*,*>:  WPlease choose an option 
+----
+BUTTONS
+direction
+<*,*,it,*>: Direzione
+<*,*,*,*>:  Direction
+advertisement
+<*,*,it,*>: Annuncio
+<*,*,*,*>:  Advertisement
+shops
+<*,*,it,*>: Negozi
+<*,*,*,*>:  Shops
+----
+

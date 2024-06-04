@@ -1,0 +1,12 @@
+IMAGE
+<*, *, *, *>:  img/pin.png
+----
+TEXT
+<*,*,it,*>: Fornisci il codice PIN 
+<*,*,*,*>:  Please provide pin cod
+----
+TTS
+<*,*,it,*>: Fornisci il codice PIN
+<*,*,*,*>:  Please provide pin code
+----
+

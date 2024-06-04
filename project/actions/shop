@@ -1,0 +1,12 @@
+IMAGE
+<*,*,*,*>:  img/shops.jpg
+----
+TEXT_title
+<*,*,it,*>: Negozi nel centro commerciale
+<*,*,*,*>:  Shops in mall 
+----
+TTS
+<*,*,it,*>: Negozi nel centro commerciale
+<*,*,*,*>:  Shops in mall 
+----
+
